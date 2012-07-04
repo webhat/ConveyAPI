@@ -1,0 +1,51 @@
+{"status":{
+    "code":200,
+    "limit_remaining":50,
+    "limit_reset_in":51727
+}, "documents":[
+    {
+        "text":"Mother Nature plays the long game, we humans toy around with the short game. One guess who wins.",
+        "incidents":[
+            {
+                "text":"Mother Nature plays the long game, we humans toy around with the short game.",
+                "annotations":{
+                    "polarity":{
+                        "value":"neutral",
+                        "confidence":0.44746683531840314
+                    },
+                    "emotion":{
+                        "value":"anticipation",
+                        "confidence":0.2574059357433341
+                    },
+                    "intensity":{
+                        "value":"medium",
+                        "confidence":0.28204266949197404
+                    }
+                }
+            },
+            {
+                "text":"One guess who wins.",
+                "annotations":{
+                    "polarity":{
+                        "value":"positive",
+                        "confidence":0.469259030011682
+                    },
+                    "emotion":{
+                        "value":"anticipation",
+                        "confidence":0.24109149877795266
+                    },
+                    "intensity":{
+                        "value":"none",
+                        "confidence":0.00510970996341353
+                    }
+                }
+            }
+        ],
+        "annotations":{
+            "spam":{
+                "value":"not spam",
+                "confidence":0.6259105439958585
+            }
+        }
+    }
+]}

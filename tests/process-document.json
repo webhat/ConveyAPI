@@ -1,0 +1,27 @@
+{"status":{
+    "code":200,
+    "limit_remaining":50,
+    "limit_reset_in":47742
+}, "documents":[
+    {
+        "text":"Mother Nature plays the long game, we humans toy around with the short game. One guess who wins.",
+        "annotations":{
+            "polarity":{
+                "value":"neutral",
+                "confidence":0.4184873848275399
+            },
+            "emotion":{
+                "value":"anticipation",
+                "confidence":0.3003632018223846
+            },
+            "intensity":{
+                "value":"medium",
+                "confidence":0.26000742945156474
+            },
+            "spam":{
+                "value":"not spam",
+                "confidence":0.6259105439958585
+            }
+        }
+    }
+]}
