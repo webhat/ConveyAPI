@@ -1,4 +1,4 @@
-const api_key = "XXX";
+
 var level = "document";
 var polarity = "true";
 var emotion = "true";
@@ -18,8 +18,8 @@ $(document).ready(function () {
 
     updateConvey({"status":{"code":200, "limit_remaining":47, "limit_reset_in":49480}, "documents":[
         {"text":"eoao", "annotations":{
-            "polarity":{"value":"negative", "confidence":0.3333333333333333},
-            "emotion":{"value":"anger", "confidence":0.125},
+            "polarity":{"value":"positive", "confidence":0.3333333333333333},
+            "emotion":{"value":"joy", "confidence":0.125},
             "intensity":{"value":"none", "confidence":0.009029829339139745},
             "spam":{"value":"not spam", "confidence":0.4879249826495159}
         }}
@@ -27,16 +27,22 @@ $(document).ready(function () {
 });
 
 function updateConvey(data) {
-    var polarity = data.documents[0].annotations.polarity.value;
-    var emotion = data.documents[0].annotations.emotion.value;
-    var spam = data.documents[0].annotations.spam.value;
-    var intensity = data.documents[0].annotations.intensity.value;
+    var polarity = data.documents[0].annotations.polarity;
+    var emotion = data.documents[0].annotations.emotion;
+    var spam = data.documents[0].annotations.spam;
+    var intensity = data.documents[0].annotations.intensity;
 
     console.log("json: " + polarity);
-    $("#polarity").addClass(polarity).text(polarity); // positive, negative or neutral
-    $("#emotion").addClass(emotion).text(emotion); // joy, trust, fear, surprise, sadness, disgust, anger, or anticipation
-    $("#spam").addClass(spam).text(spam); // spam or not spam
-    $("#intensity").addClass(intensity).text(intensity); // low, medium, or high, none
+
+    $("#polarity").removeClass("positive negative neutral");
+    $("#emotion").removeClass("joy trust fear surprise sadness disgust anger anticipation");
+    $("#spam").removeClass("spam notspam");
+    $("#intensity").removeClass();
+
+    $("#polarity").addClass(polarity.value); // positive, negative or neutral
+    $("#emotion").addClass(emotion.value); // joy, trust, fear, surprise, sadness, disgust, anger, or anticipation
+    $("#spam").addClass(spam.value.replace(" ", "")); // spam or not spam
+    $("#intensity").addClass(intensity.value).text(intensity.value); // low, medium, or high, none
 }
 
 
