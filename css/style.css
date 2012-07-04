@@ -1,0 +1,92 @@
+#conveyit {
+    width: 400px;
+}
+
+.anger {
+    background-image: url(../img/FACE_EXPRESS.png);
+    background-repeat: no-repeat;
+    background-position: -57px 0px;
+    width: 53px;
+    height: 50px;
+}
+
+.joy, .positive {
+    background-image: url(../img/FACE_EXPRESS.png);
+    background-repeat: no-repeat;
+    background-position: 0px -50px;
+    width: 53px;
+    height: 50px;
+}
+
+.trust {
+    background-image: url(../img/FACE_EXPRESS.png);
+    background-repeat: no-repeat;
+    background-position: -59px -50px;
+    width: 53px;
+    height: 50px;
+}
+
+.fear {
+    background-image: url(../img/FACE_EXPRESS.png);
+    background-repeat: no-repeat;
+    background-position: -114px 0px;
+    width: 53px;
+    height: 50px;
+}
+
+.surprise {
+    background-image: url(../img/FACE_EXPRESS.png);
+    background-repeat: no-repeat;
+    background-position: -2px -100px;
+    width: 53px;
+    height: 50px;
+}
+
+.sadness, .negative {
+    background-image: url(../img/FACE_EXPRESS.png);
+    background-repeat: no-repeat;
+    background-position: -59px -100px;
+    width: 53px;
+    height: 50px;
+}
+
+.disgust {
+    background-image: url(../img/FACE_EXPRESS.png);
+    background-repeat: no-repeat;
+    background-position: -59px -150px;
+    width: 53px;
+    height: 50px;
+}
+
+.anticipation {
+    background-image: url(../img/FACE_EXPRESS.png);
+    background-repeat: no-repeat;
+    background-position: -114px -50px;
+    width: 53px;
+    height: 50px;
+}
+
+.spam {
+    background-image: url(../img/SPAM.png);
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-position: -50px 0px;
+}
+
+.nospam {
+    background-image: url(../img/SPAM.png);
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+
+.neutral {
+    background-image: url(../img/FACE_EXPRESS.png);
+    background-repeat: no-repeat;
+    background-position: 0px -150px;
+    width: 53px;
+    height: 50px;
+}
