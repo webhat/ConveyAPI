@@ -17,7 +17,7 @@ $(document).ready(function () {
     });
 
     updateConvey({"status":{"code":200, "limit_remaining":47, "limit_reset_in":49480}, "documents":[
-        {"text":"eoao", "annotations":{
+        {"text":"", "annotations":{
             "polarity":{"value":"positive", "confidence":0.3333333333333333},
             "emotion":{"value":"joy", "confidence":0.125},
             "intensity":{"value":"none", "confidence":0.009029829339139745},
@@ -37,7 +37,7 @@ function updateConvey(data) {
     $("#polarity").removeClass("positive negative neutral");
     $("#emotion").removeClass("joy trust fear surprise sadness disgust anger anticipation");
     $("#spam").removeClass("spam notspam");
-    $("#intensity").removeClass();
+    $("#intensity").removeClass("low medium high none");
 
     $("#polarity").addClass(polarity.value); // positive, negative or neutral
     $("#emotion").addClass(emotion.value); // joy, trust, fear, surprise, sadness, disgust, anger, or anticipation
