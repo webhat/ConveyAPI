@@ -10,7 +10,8 @@ $(document).ready(function () {
     $('#conveyit').keyup(function () {
         console.log("conveyit");
         var text = $('#conveyit').val();
-        var convey_uri = "http://beta.conveyapi.com/analysis-engine/process?api_key=" + api_key + "&annotation.level=" + level + "&annotation.polarity=" + polarity + "&annotation.emotion=" + emotion + "&annotation.intensity=" + intensity + "&annotation.spam=" + spam + "&text=" + text + "&callback=?";
+        var convey_uri = "http://www.rphh.org/ConveyAPI/php/convey.php?annotation.level=" + level + "&annotation.polarity=" + polarity + "&annotation.emotion=" + emotion + "&annotation.intensity=" + intensity + "&annotation.spam=" + spam + "&text=" + text + "&callback=?";
+        //var convey_uri = "http://beta.conveyapi.com/analysis-engine/process?api_key=" + api_key + "&annotation.level=" + level + "&annotation.polarity=" + polarity + "&annotation.emotion=" + emotion + "&annotation.intensity=" + intensity + "&annotation.spam=" + spam + "&text=" + text + "&callback=?";
 // TODO: limit access based on "limit_remaining"
         $.getJSON(convey_uri, updateConvey);
         console.log("conveyit: " + convey_uri);
