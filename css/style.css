@@ -34,7 +34,7 @@
     height: 50px;
 }
 
-.surprise {
+.surprise, .other {
     background-image: url(../img/FACE_EXPRESS.png);
     background-repeat: no-repeat;
     background-position: -2px -100px;

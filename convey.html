@@ -2,10 +2,81 @@
 <html>
 <head>
     <title>Convey API</title>
+		<meta name="robots" content="noindex, nofollow"/>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/api_key.js"></script>
     <script type="text/javascript" src="js/convey.js"></script>
     <link type="text/css" rel="stylesheet" href="css/style.css"/>
+<style>
+		body{ 
+			padding: 0;
+			margin: 0;
+		}
+
+		#banner{
+			height: 149px;
+			width: 149px;
+			overflow:hidden;
+			padding: 0;
+			margin: 0;
+		}
+
+		#banner a{
+
+			display: block;
+			width: 190px;
+			font-size: 14px;
+			font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", 
+				"Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, 
+				Geneva, "Helvetica Neue", Helvetica, Arial, sans serif;
+			background-color: #333;
+			color: #FFF;
+			word-spacing: 2px;
+			text-decoration: none;
+			padding: 5px 15px 5px 25px;
+
+			position:relative;
+			left: 20px;
+			top: -37px;
+			text-align: center;
+
+			-moz-transform-origin: 0 0 ;
+			-moz-transform:rotate(45deg);
+			-moz-box-shadow:    1px 1px 5px 1px #666;
+
+			-webkit-transform-origin: 0 0 ;	
+			-webkit-transform:rotate(45deg);
+			-webkit-box-shadow: 1px 1px 5px 1px #666;
+
+			-ms-transform-origin: 0 0 ;	
+			-ms-transform:rotate(45deg);
+			-ms-box-shadow: 1px 1px 5px 1px #666;
+
+			transform-origin: 0 0 ;	
+			transform:rotate(45deg);
+			box-shadow: 1px 1px 5px 1px #666;
+
+			background-image: linear-gradient(bottom, #000000 3%, #666666 5%, #000000 7%, #000000 93%, #666666 95%, #000000 97%);
+			background-image: -o-linear-gradient(bottom, #000000 3%, #666666 5%, #000000 7%, #000000 93%, #666666 95%, #000000 97%);
+			background-image: -moz-linear-gradient(bottom, #000000 3%, #666666 5%, #000000 7%, #000000 93%, #666666 95%, #000000 97%);
+			background-image: -webkit-linear-gradient(bottom, #000000 3%, #666666 5%, #000000 7%, #000000 93%, #666666 95%, #000000 97%);
+			background-image: -ms-linear-gradient(bottom, #000000 3%, #666666 5%, #000000 7%, #000000 93%, #666666 95%, #000000 97%);
+
+			background-image: -webkit-gradient(
+				linear,
+				left bottom,
+				left top,
+				color-stop(0.03, #000000),
+				color-stop(0.05, #666666),
+				color-stop(0.07, #000000),
+				color-stop(0.93, #000000),
+				color-stop(0.95, #666666),
+				color-stop(0.97, #000000)
+			);	
+
+		}
+
+	</style>
 </head>
 <body>
 <textarea id="conveyit" cols="100" rows="3"></textarea>
@@ -16,22 +87,28 @@
 <div id="intensity"></div>
 
 <hr/>
-<div style="visibility: hidden; display: none;">
-<div class="joy"></div>
-<div class="trust"></div>
-<div class="fear"></div>
-<div class="surprise"></div>
-<div class="sadness"></div>
-<div class="disgust"></div>
-<div class="anger"></div>
-<div class="anticipation"></div>
-
-<div class="spam"></div>
-<div class="notspam"></div>
-
-<div class="positive"></div>
-<div class="neutral"></div>
-<div class="negative"></div>
+<div style="visibility: visible; display: inline; float:left;">
+	<div>emotion</div>
+	<div class="joy"></div>
+	<div class="trust"></div>
+	<div class="fear"></div>
+	<div class="surprise"></div>
+	<div class="sadness"></div>
+	<div class="disgust"></div>
+	<div class="anger"></div>
+	<div class="anticipation"></div>
 </div>
+<div style="visibility: visible; display: inline; float:left;">
+	<div>polarity</div>
+	<div class="positive"></div>
+	<div class="neutral"></div>
+	<div class="negative"></div>
+</div>
+<div style="visibility: visible; display: inline;float:left;">
+	<div>spam</div>
+	<div class="spam"></div>
+	<div class="notspam"></div>
+</div>
+	<a href="http://github.com/webhat/ConveyAPI"><img style="position: absolute; top: 0; left: 700px; border: 0;" src="https://a248.e.akamai.net/assets.github.com/img/7afbc8b248c68eb468279e8c17986ad46549fb71/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub"></a>
 </body>
 </html>
